@@ -28,13 +28,13 @@
    
    9, Pull request 제목을 작성하고 내용에는 하고싶은 말을 적는다.(제목은 필수! 내용은 자유, 양식은 아래 참고)
    
-   11, Create Pull request 버튼을 누른다.
+   10, Create Pull request 버튼을 누른다.
    
-   10, 관리자가 Merge하면 개인 Repo에 가서 초록색 Code버튼을 누르고 Fetch and merge 버튼을 누른다.
+   11, 관리자가 Merge하면 개인 Repo에 가서 초록색 Code버튼을 누르고 Fetch and merge 버튼을 누른다.
    
-   11, 개인 Repo의 코드들이 최신화된다.
+   12, 개인 Repo의 코드들이 최신화된다.
    
-   12, git pull로 로컬 파일을 최신화한다.
+   13, git pull로 로컬 파일을 최신화한다.
    
    
    
