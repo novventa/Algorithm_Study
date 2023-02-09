@@ -23,6 +23,7 @@
    1. 메세지 양식은 문제이름/문제번호/문제티어/풀었으면O, 못풀었으면 X
 
    ```git commit -m "좌표정렬하기 / 11650 / 실버5 / O```
+  
    2. 필수:exclamation:
 
  * Pull request 규칙:exclamation:
