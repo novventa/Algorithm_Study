@@ -52,6 +52,7 @@
  ### :white_check_mark:Pull request 규칙:exclamation:
  
    1, Pull request 제목 양식
+      
       이름 / 날짜 ex) 김싸피 / 230210
       
    2, 제목은 필수:exclamation: 내용은 자유
