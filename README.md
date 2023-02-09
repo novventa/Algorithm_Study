@@ -18,7 +18,7 @@
    
    4, 복사본을 Clone한다.
    
-   5, 각자의 IDE에서 본인 닉네임 폴더를 열고 StudyCode/src에 새로운 java class 파일을 생성하고 문제를 푼다.
+   5, 각자의 IDE에서 본인 닉네임 폴더를 열고 StudyCode/src에 새로운 패키지 또는 java class 파일을 생성하고 문제를 푼다.
    
    6, 새로 생성하는 class 파일명은 문제번호로 한다.
    
