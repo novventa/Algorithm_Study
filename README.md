@@ -12,23 +12,23 @@
 
    1, 폴더의 대분류는 스터디원 각자의 Github 닉네임으로 한다.
    
-   2, 코드 파일의 제목은 이렇게 한다.
+   2, 각자 이 Repo를 Fork한다.
    
-   3, 각자 이 Repo를 Fork한다.
+   3, 개인 Repo에 공유 Repo의 복사본이 생성된다.
    
-   4, 개인 Repo에 공유 Repo의 복사본이 생성된다.
+   4, 복사본을 Clone한 뒤 문제를 푼다
    
-   5, 복사본을 Clone한 뒤 문제를 푼다
+   5, 문제를 다 풀었으면 Commit 후 Push한다.(Commit 양식은 아래 참고)
    
-   6, 문제를 다 풀었으면 Commit 후 Push한다.(Commit 양식은 아래 참고)
+   6, 개인 Repo 상단의 Pull request탭에 가서 New pull request 버튼을 누른다.
    
-   7, 개인 Repo 상단의 Pull request탭에 가서 New pull request 버튼을 누른다.
+   7, Pull request 제목을 작성하고 내용에는 하고싶은 말을 적는다.(제목은 필수! 내용은 자유, 양식은 아래 참고)
    
-   8, Pull request 제목을 작성하고 내용에는 하고싶은 말을 적는다.(제목은 필수! 내용은 자유, 양식은 아래 참고)
+   8, 관리자가 Merge하면 개인 Repo에 가서 초록색 Code버튼을 누르고 Fetch and merge 버튼을 누른다.
    
-   9, 관리자가 Merge하면 개인 Repo에 가서 초록색 Code버튼을 누르고 Fetch and merge 버튼을 누른다.
+   9, 개인 Repo의 코드들이 최신화된다.
    
-   10, 개인 Repo의 코드들이 최신화된다.
+   10, git pull로 로컬 파일을 최신화한다.
    
 
  ### :white_check_mark:Commit 규칙:exclamation:
