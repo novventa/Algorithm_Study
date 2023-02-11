@@ -36,7 +36,7 @@
    
    13, git pull 또는 clone으로 로컬 파일을 최신화한다.
    
-   14, 정상적인 파일 경로는 다음과 같습니다. 닉네임/StudyCode/src(소스폴더)/Baekjun(패키지)/문제번호.java(클래스 파일)
+   14, 정상적인 파일 경로는 다음과 같습니다. 닉네임/StudyCode/src(소스폴더)/Baekjoon(패키지)/문제번호.java(클래스 파일)
    
    
    
