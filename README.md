@@ -20,8 +20,8 @@
    
    5, 각자의 IDE에서 본인 닉네임 폴더를 열고 StudyCode/src에 새로운 패키지 또는 java class 파일을 생성하고 문제를 푼다.
    
-   6, 새로 생성하는 class 파일명은 문제번호로 한다.
-   
+   6, 새로 생성하는 class 파일명은 P + 문제번호로 한다. ex)P11650.java
+    
    7, 문제를 다 풀었으면 Commit 후 Push한다.(Commit 양식은 아래 참고)
   
    8, 개인 Repo 상단의 Pull request탭에 가서 New pull request 버튼을 누른다.
