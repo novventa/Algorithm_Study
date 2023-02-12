@@ -19,9 +19,9 @@
    4, 복사본을 Clone한다.
    
    5, 각자의 IDE에서 본인 닉네임 폴더를 열고 StudyCode/src에 새로운 패키지 또는 java class 파일을 생성하고 문제를 푼다. 테스트용 패키지는 삭제해도된다.
-
-   6, 스터디원들이 서로의 코드를 보기 편하도록 class 파일명은 P + 문제번호로 한다. ex)P11650.java
    
+   6, 스터디원들이 서로의 코드를 보기 편하도록 class 파일명은 P + 문제번호로 한다. ex)P11650.java
+    
    7, 문제를 다 풀었으면 Commit 후 Push한다.(Commit 양식은 아래 참고)
   
    8, 개인 Repo 상단의 Pull request탭에 가서 New pull request 버튼을 누른다.
@@ -52,6 +52,7 @@
  ### :white_check_mark:Pull request 규칙:exclamation:
  
    1, Pull request 제목 양식
+      
       이름 / 날짜 ex) 김싸피 / 230210
       
    2, 제목은 필수:exclamation: 내용은 자유
