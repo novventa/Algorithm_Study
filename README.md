@@ -20,7 +20,7 @@
    
    5, 각자의 IDE에서 본인 닉네임 폴더를 열고 StudyCode/src에 새로운 java class 파일을 생성하고 문제를 푼다.
    
-   6, 새로 생성하는 class 파일명은 문제번호로 한다.
+   6, 새로 생성하는 class 파일명은 P + 문제번호로 한다. ex)P12345
    
    7, 문제를 다 풀었으면 Commit 후 Push한다.(Commit 양식은 아래 참고)
   
@@ -36,7 +36,7 @@
    
    13, git pull 또는 clone으로 로컬 파일을 최신화한다.
    
-   14, 정상적인 파일 경로는 다음과 같습니다. 닉네임/StudyCode/src(소스폴더)/Baekjun(패키지)/문제번호.java(클래스 파일)
+   14, 정상적인 파일 경로는 다음과 같습니다. 닉네임/StudyCode/src(소스폴더)/Baekjoon(패키지)/문제번호.java(클래스 파일)
    
    
    
