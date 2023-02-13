@@ -8,8 +8,12 @@ public class P9012 {
 		int T = sc.nextInt();
 		for (int i = 0; i < T; i++) {
 			String vps = sc.next();
+			
+			// 편의를 위해 입력받은 문자열의 길이를 저장
 			int size = vps.length();
+			// 괄호가 열리는 횟수를 구하기 위한 변수
 			int open = 0;
+			// 괄호가 닫히는 횟수를 구하기 위한 변수
 			int close = 0;
 			char[] arr = new char[size];
 			// 문자열을 배열로 변환
