@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
+	// 재귀
+	// 10870 피보나치 수 5
+	// 브론즈2
+	
 	// 피보나치 메소드 정의
 	public static int fibonacci(int n) {
 		// 0번째 피보나치는 0
@@ -25,4 +29,5 @@ public class Main {
 		
 	}
 }
+
 
