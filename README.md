@@ -1,14 +1,14 @@
 # Algorithm_Study
 
- ### :bell:규칙 (임시)
+ ### :bell: 규칙
 
    1, 정해진 시간 안에 Pull Request 하기
    
    2, 시간 안에 풀지 못했어도 Pull request는 해야함!
    
-   3, 여기부터는 회의 후 작성
+   3, [스터디 공지 및 이번 주 문제 확인](https://amazing-quarter-389.notion.site/ea34967b659148b7ae2d664928c24346)
 
- ### :question:제출 방법 (임시)
+ ### :question: 제출 방법
 
    1, 폴더의 대분류는 스터디원 각자의 Github 닉네임으로 한다.
    
@@ -30,7 +30,7 @@
    
    10, Create Pull request 버튼을 누른다.
    
-   11, 관리자가 Merge하면 개인 Repo에 가서 초록색 Code버튼을 누르고 Fetch and merge 버튼을 누른다.
+   11, 관리자가 Merge하면 개인 Repo에서 Sync Fork 버튼을 누른다.
    
    12, 개인 Repo의 코드들이 최신화된다.
    
@@ -43,7 +43,7 @@
 
  ### :white_check_mark:Commit 규칙:exclamation:
 
-   1, 메세지 양식은 문제이름/문제번호/문제티어/풀었으면O, 못풀었으면 X
+   1, 메세지 양식은 문제이름 / 문제번호 / 문제티어 / 풀었으면O, 못풀었으면 X
 
    ```git commit -m "좌표정렬하기 / 11650 / 실버5 / O"```
   
@@ -51,8 +51,8 @@
 
  ### :white_check_mark:Pull request 규칙:exclamation:
  
-   1, Pull request 제목 양식
+   1, Pull request 제목 양식은 이름 / 날짜 
       
-      이름 / 날짜 ex) 김싸피 / 230210
+    김싸피 / 230210
       
    2, 제목은 필수:exclamation: 내용은 자유
