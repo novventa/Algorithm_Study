@@ -6,9 +6,7 @@
    
    2, 시간 안에 풀지 못했어도 Pull request는 해야함!
    
-   3, 스터디 공지 및 이번 주 문제 확인
-      
-      * https://amazing-quarter-389.notion.site/ea34967b659148b7ae2d664928c24346
+   3, [스터디 공지 및 이번 주 문제 확인] (https://amazing-quarter-389.notion.site/ea34967b659148b7ae2d664928c24346)
 
  ### :question: 제출 방법
 
