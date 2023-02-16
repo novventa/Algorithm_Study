@@ -1,32 +1,45 @@
 package day0213;
-
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class p11866 {
+public class P11866 {
 	public static void main(String[] args) {
+	
 		Scanner sc = new Scanner(System.in);
-
-		// ì˜¬ë¼ê°€ëŠ” A
-		int a = sc.nextInt();
-		// ë–¨ì–´ì§€ëŠ” B
-		int b = sc.nextInt();
-		// ë†’ì´
-		int v = sc.nextInt();
-
-		//ê±¸ë¦¬ëŠ” ë‚ 
-		int count = 0;
-
-		//ì „ì œ: ë–¨ì–´ì§€ëŠ” bëŠ” ì˜¬ë¼ê°€ëŠ” aë³´ë‹¤ ë¬´ì¡°ê±´ í•˜ë£¨ ë” ì ê²Œ ì ìš©ë¨
-		//a*ê±¸ë¦¬ëŠ” ë‚  - b*(ê±¸ë¦¬ëŠ”ë‚  -1) >= vë¥¼ ë§Œì¡±í•˜ë©´ì„œ
-		//ë‚˜ë¨¸ì§€ê°€ ì—†ë‹¤ë©´ ê·¸ëŒ€ë¡œ,
-		//ë‚˜ë¨¸ì§€ê°€ ìˆë‹¤ë©´ +1ì„ ë”í•´ì£¼ë©´ ê±¸ë¦¬ëŠ” ë‚ ì„ êµ¬í•  ìˆ˜ ìˆë‹¤.
-		if((v-b)%(a-b)==0) {
-			count = (v-b)/(a-b);
-		}else {
-			count = ((v-b)/(a-b))+1;
+		//NÀ»  ÀÔ·Â¹ŞÀ½
+		int N = sc.nextInt();
+		int K = sc.nextInt();
+		
+		//intÇü queue ¼±¾ğ
+		Queue<Integer> queue = new LinkedList<Integer>();
+		//°á°úÃâ·Â¿ë
+		Queue<Integer> result = new LinkedList<Integer>();
+		//1ºÎÅÍ N±îÁöÀÇ ¼ö¸¦ ÇÏ³ª¾¿ Ãß°¡ÇÔ
+		for(int i=1; i<=N; i++) {
+			queue.offer(i);
 		}
 		
-		System.out.println(count);
-		sc.close();
+		
+		//N=1ÀÇ °æ¿ì ½ÇÇàÇÏÁö ¾Ê±â ¶§¹®¿¡ ±×´ë·Î Ãâ·Â
+		if(queue.size()==1) {
+			result = queue;
+		//N=1ÀÌ ¾Æ´Ñ °æ¿ì
+		}else {
+			//Å¥ÀÇ ¿ø¼Ò °³¼ö°¡ 1ÀÌ ¾Æ´Ï¶ó¸é 1ÀÌ µÉ¶§±îÁö ÁøÇà
+			while(!queue.isEmpty()) {
+				//Á¦ÀÏ ¸ÕÀú µé¾î°£ ¼ö¸¦ Á¦°ÅÇÏ°í µÚ¿¡ Ãß°¡
+				for(int n = 1; n < K; n++) {
+				queue.offer(queue.poll());
+				}result.offer(queue.poll());
+			}
+			
+		}
+		System.out.print("<");
+		for(int	i=1; i<N; i++) {
+			System.out.print(result.poll()+", ");	
+		}
+		System.out.print(result.poll());
+		System.out.print(">");
 	}
 }
