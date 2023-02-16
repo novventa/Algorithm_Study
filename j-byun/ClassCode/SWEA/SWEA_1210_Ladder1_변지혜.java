@@ -42,24 +42,21 @@ public class SWEA_1210_Ladder1_변지혜 {
 			// 100*100 크기의 사다리 배열 만들기
 			int[][] ladder = new int[100][100];
 			
-			// 사다리 배열에 사다리 정보를 표현하는 1, 0 입력받기
-			for (int row = 0; row < 100; row++) {
-				for (int col = 0; col < 100; col++) {
-					ladder[row][col] = sc.nextInt();
-				}
-			}
-			
 			// 현재 진행중인 좌표의 위치를 나타낼 currentRow, currentCol 변수를 만들어준다
 			// 99행의 x위치부터 시작할거니까 currentRow = 99
 			int currentRow = 99;
 			int currentCol = 0;
 			
-			// 마지막 행에서 도착지 X로 표현된 2 찾기
-			for (int col = 0; col < 100; col++) {
-				// 도착지 2를 찾으면
-				if (ladder[currentRow][col] == 2) {
-					// 그 때의 col 값을 현재col에 저장해준다
-					currentCol = col;
+			// 사다리 배열에 사다리 정보를 표현하는 1, 0 입력받기
+			for (int row = 0; row < 100; row++) {
+				for (int col = 0; col < 100; col++) {
+					ladder[row][col] = sc.nextInt();
+					
+					// 99행에서 도착지X의 좌표인 2를 찾으면
+					// 그 때의 col값 저장하기
+					if (ladder[row][col] == 2) {
+						currentCol = col;
+					}
 				}
 			}
 			
