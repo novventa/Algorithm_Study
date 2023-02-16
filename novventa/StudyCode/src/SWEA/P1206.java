@@ -41,4 +41,5 @@ public class P1206 {
 			System.out.println("#" + tc + " " + cnt);
 		}
 	}
+	
 }
