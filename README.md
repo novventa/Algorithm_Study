@@ -7,6 +7,8 @@
    2, 시간 안에 풀지 못했어도 Pull request는 해야함!
    
    3, [스터디 공지 및 이번 주 문제 확인](https://amazing-quarter-389.notion.site/ea34967b659148b7ae2d664928c24346)
+   
+   4, [교수님의 알고리즘 스프레드시트 보기](https://docs.google.com/spreadsheets/d/1ZYQJ236WegjOtMnRxNDrzdegraNs-IWGB4C3_-6JSAc/edit#gid=0)
 
  ### :question: 제출 방법
 
