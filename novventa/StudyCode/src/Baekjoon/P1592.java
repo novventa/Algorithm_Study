@@ -54,6 +54,7 @@ public class P1592 {
                 cnt++;
             }
         }
+
         // 출력
         System.out.println(cnt);
     }
