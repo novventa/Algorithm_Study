@@ -81,4 +81,3 @@ public class P1244 {
         }
     }
 }
-
