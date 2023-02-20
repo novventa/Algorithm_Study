@@ -13,7 +13,7 @@ public class P11866 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        // 사람 수와 몇 번째 사람을 제거할 것인지 결정하는 K 입력받기
+        // 사람 수와 몇 번째 사람을 제거할 것인지 결정하는 K 입력받기=
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
 
@@ -56,3 +56,4 @@ public class P11866 {
 
     }
 }
+
