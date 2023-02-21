@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int num = sc.nextInt();
+
+		int m = sc.nextInt();
+
+		int l = sc.nextInt();
+
+		// 1~N까지 배열로 정리
+		int[] arr = new int[num];
+		arr[0] = 1;
+
+		int k = 1;
+
+		// 공을 던지는 횟수
+		int count = 0;
+
+		boolean a = true;
+
+		// 공을 받는 인덱스 (l씩 증가하기 때문에)
+		int index = l;
+		while (a) {
+
+			// 공을 받으면 해당 원소의 값 +1
+			arr[index]++;
+
+			// 공을 m번 받으면 반복문 멈추기
+			if (arr[index] == m) {
+				a = false;
+			}
+
+			// 공을 짝수번 받으면 다음 공 받는 사람은 배열의 인덱스가 감소하는 방향으로 l씩 감소
+			if (arr[index] % 2 == 0) {
+				index -= l;
+				// 0보다 작아지면 num만큼 더해줘서 배열 안에서만 움직이게 만듬
+				if (index < 0) {
+					index += num;
+				}
+				// 공을 홀수번 받으면 다음 공 받는 사람은 배열의 인덱스가 l씩 증가
+			} else {
+				index += l;
+				// num이상이면 num만큼 빼줘서 배열 안에서만 움직이게 만듬
+				if (index > num - 1) {
+					index -= num;
+				}
+			}
+
+			// 진행(공을 던지는 것)횟수
+			count++;
+		}
+
+		// 공을 1번 받는건 시작을 하지 않아도 됨
+		if (m == 1) {
+			count = 0;
+		}
+
+		System.out.println(count);
+
+		sc.close();
+	}
+}
+
+
+
