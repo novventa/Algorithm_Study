@@ -21,7 +21,7 @@ public class Queue_변지혜 {
 
 		print(queue);
 		
-		System.out.println(size(queue));
+		System.out.println(peek(queue));
 		
 	}
 
@@ -66,7 +66,7 @@ public class Queue_변지혜 {
 			return -2000000000;
 		}
 		
-		return queue[rear];
+		return queue[front + 1];
 	}
 
 	// print
