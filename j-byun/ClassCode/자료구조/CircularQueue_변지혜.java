@@ -60,6 +60,7 @@ public class CircularQueue_변지혜 {
 			idx %= size;
 			System.out.print(arr[idx] + " ");
 		}
+		System.out.println();
 	}
 
 }
