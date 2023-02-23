@@ -43,7 +43,11 @@ public class CircularQueue_변지혜 {
 	}
 	
 	public static int size() {
-		return rear - front;
+		if (rear >= front) {
+			return rear - front;
+		} else {
+			return rear - front + size;
+		}
 	}
 	
 	public static void print() {
@@ -54,7 +58,7 @@ public class CircularQueue_변지혜 {
 		
 		for (int idx = front + 1; idx <= rear; idx++) {
 			idx %= size;
-			System.out.println(arr[idx]);
+			System.out.print(arr[idx] + " ");
 		}
 	}
 
