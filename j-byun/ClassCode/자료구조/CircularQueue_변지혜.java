@@ -1,9 +1,15 @@
 
 // 원형 큐
 public class Queue {
-	int size = Integer.MAX_VALUE;
-	int[] arr = new int[size];
+	int size;
+	int[] arr;
 	int front = 0, rear = 0;
+	
+	public Queue(int size) {
+		super();
+		this.size = size;
+		arr = new int[size];
+	}
 
 	public boolean isEmpty() {
 		return front == rear;
@@ -56,10 +62,11 @@ public class Queue {
 			return;
 		}
 		
-		for (int idx = front + 1; idx <= rear; idx++) {
+		for (int idx = front + 1; (idx % size) != rear; idx++) {
 			idx %= size;
 			System.out.print(arr[idx] + " ");
 		}
+		System.out.print(arr[rear]); // for문 조건에서 rear값은 출력안됨 -> 따로 출력해주기
 		System.out.println();
 	}
 
