@@ -1,47 +1,58 @@
-package test;
-
 
 public class Stack_변지혜 {
-	static int[] arr = new int[20];
-	static int top = -1;
+	public static int size = Integer.MAX_VALUE;
+	public static int[] arr = new int[size];
+	public static int top = -1;
 	
-	public static void main(String[] args) {
-		
-		// 메인에서 메소드 테스트
-		
-		
+	public static boolean isEmpty() {
+		return top == -1;
 	}
 	
-	private static void push(int x) {
-		if (top == arr.length - 1) {
-			System.out.println("stack overflow");
-		}
-		arr[++top] = x;
+	public static boolean isFull() {
+		return top == size - 1;
 	}
 	
-	private static int pop() {
-		if (top == -1) {
-			System.out.println("stack is empty");
-			return -1;
+	public static void push(int item) {
+		if (isFull()) {
+			System.out.println("스택이 가득차서 더 이상 입력할 수 없습니다.");
+			return;
 		}
+		
+		arr[++top] = item;
+	}
+	
+	public static int pop() {
+		if (isEmpty()) {
+			System.out.println("스택이 비어있어 뺄 수 있는 값이 없습니다");
+			return Integer.MIN_VALUE;
+		}
+		
 		return arr[top--];
 	}
 	
-	private static void print() {
+	public static int peek() {
+		if (isEmpty()) {
+			System.out.println("스택이 비어있어 조회할 수 있는 값이 없습니다");
+			return Integer.MIN_VALUE;
+		}
+		
+		return arr[top];
+	}
+	
+	public static int size() {
+		return top + 1;
+	}
+	
+	public static void print() {
+		if (isEmpty()) {
+			System.out.println("큐가 비어있어 출력할 수  있는 값이 없습니다");
+			return;
+		}
+		
 		for (int idx = top; idx >= 0; idx--) {
 			System.out.print(arr[idx] + " ");
 		}
 		System.out.println();
 	}
-	
-	private static boolean isEmpty() {
-		return top == -1;
-	}
-	
-	private static boolean isFull() {
-		return top == arr.length - 1;
-	}
 
 }
-
-
