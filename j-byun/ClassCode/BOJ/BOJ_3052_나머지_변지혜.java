@@ -41,3 +41,4 @@ public class BOJ_3052_나머지_변지혜 {
 	}
 
 }
+
