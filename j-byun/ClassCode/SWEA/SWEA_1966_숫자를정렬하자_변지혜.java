@@ -31,7 +31,7 @@ public class SWEA_1966_숫자를정렬하자_변지혜 {
 				nums[idx] = sc.nextInt();
 			}
 			
-			// 선택정렬
+			// 삽입정렬
 			for (int pass = 1; pass < size; pass++) { // 0번 인덱스는 이미 정렬된 자리라고 가정하고 시작
 				for (int idx = pass; idx > 0; idx--) { // 내 앞의 값들을 확인하면서
 					if (nums[idx - 1] > nums[idx]) { // 나보다 내 앞의 값이 크면 둘이 자리를 바꾼다
@@ -42,6 +42,7 @@ public class SWEA_1966_숫자를정렬하자_변지혜 {
 						
 				}
 			}
+			
 			
 			// 정렬된 배열의 원소 차례대로 출력하기
 			for (int idx = 0; idx < size; idx++) {
