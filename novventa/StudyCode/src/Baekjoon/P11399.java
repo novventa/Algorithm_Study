@@ -1,6 +1,5 @@
 package Baekjoon;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,7 +8,7 @@ public class P11399 {
     // 한 사람씩 이전까지의 기다리는 시간과 인출하는데 걸리는 시간을 더하고
     // 그 합을 누적합에 더하면 최소시간이다.
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         // 스캐너 선언
         Scanner sc = new Scanner(System.in);
         // 사람 수 입력받기
