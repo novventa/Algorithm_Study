@@ -46,7 +46,7 @@ public class SWEA_1859_백만장자프로젝트_변지혜_2 {
 					maxCost = cost[idx]; // 최고가 금액 업데이트
 
 				} else { // 오늘 매매가가 최고가가 아니면
-					profit += maxCost - cost[idx]; // 최고가 - 오늘 금액의 차익을 총 이익에 더해주자 }
+					profit += maxCost - cost[idx]; // 최고가 - 오늘 금액의 차익을 총 이익에 더해주자
 				}
 			}
 
