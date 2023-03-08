@@ -5,42 +5,43 @@ import java.util.Scanner;
 
 public class P1026 {
 	public static void main(String[] args) {
-		// ¹è¿­ 2°³°¡ ÁÖ¾îÁö°í
-		// µÎ ¹è¿­ÀÇ ¿ä¼ÒµéÀ» °¢°¢ °öÇßÀ» ¶§
-		// ÃÖ¼Ú°ªÀ» Ã£´Â ¹®Á¦
-		// ¹®Á¦¿¡¼­´Â µÎ¹øÂ° ¹è¿­À» Á¤·ÄÇÏÁö ¸»¶ó°í ÇßÁö¸¸
-		// ÃÖ¼Ú°ª¸¸ Ã£À¸¸é µÇ¹Ç·Î ±×³É Á¤·ÄÇÏÀÚ
-		// ³ªÁß¿¡ ½Ã°£ÀÌ ÀÖÀ¸¸é Á¤·ÄÇÏÁö ¾Ê°í Ç®¾îº¸ÀÚ
+		// ë°°ì—´ 2ê°œê°€ ì£¼ì–´ì§€ê³ 
+		// ë‘ ë°°ì—´ì˜ ìš”ì†Œë“¤ì„ ê°ê° ê³±í–ˆì„ ë•Œ
+		// ìµœì†Ÿê°’ì„ ì°¾ëŠ” ë¬¸ì œ
+		// ë¬¸ì œì—ì„œëŠ” ë‘ë²ˆì§¸ ë°°ì—´ì„ ì •ë ¬í•˜ì§€ ë§ë¼ê³  í–ˆì§€ë§Œ
+		// ìµœì†Ÿê°’ë§Œ ì°¾ìœ¼ë©´ ë˜ë¯€ë¡œ ê·¸ëƒ¥ ì •ë ¬í•˜ìž
+		// ë‚˜ì¤‘ì— ì‹œê°„ì´ ìžˆìœ¼ë©´ ì •ë ¬í•˜ì§€ ì•Šê³  í’€ì–´ë³´ìž
 		
-		// ½ºÄ³³Ê ¼±¾ð
+		// ìŠ¤ìºë„ˆ ì„ ì–¸
 		Scanner sc = new Scanner(System.in);
-		// ¼ýÀÚÀÇ °¹¼ö ÀÔ·Â¹Þ±â
+		// ìˆ«ìžì˜ ê°¯ìˆ˜ ìž…ë ¥ë°›ê¸°
 		int N = sc.nextInt();
-		// Ã¹¹øÂ° ¼ýÀÚµéÀ» ÀúÀåÇÒ ¹è¿­
+		// ì²«ë²ˆì§¸ ìˆ«ìžë“¤ì„ ì €ìž¥í•  ë°°ì—´
 		int[] firstArr = new int[N];
-		// µÎ¹øÂ° ¼ýÀÚµéÀ» ÀúÀåÇÒ ¹è¿­
+		// ë‘ë²ˆì§¸ ìˆ«ìžë“¤ì„ ì €ìž¥í•  ë°°ì—´
 		int[] secondArr = new int[N];
-		// Ã¹¹øÂ° ¹è¿­ ¼ýÀÚµé ÀÔ·Â¹Þ±â
+		// ì²«ë²ˆì§¸ ë°°ì—´ ìˆ«ìžë“¤ ìž…ë ¥ë°›ê¸°
 		for(int i=0;i<N;i++) {
 			firstArr[i] = sc.nextInt();
 		}
-		// µÎ¹øÂ° ¹è¿­ ¼ýÀÚµé ÀÔ·Â¹Þ±â
+		// ë‘ë²ˆì§¸ ë°°ì—´ ìˆ«ìžë“¤ ìž…ë ¥ë°›ê¸°
 		for(int i=0;i<N;i++) {
 			secondArr[i] = sc.nextInt();
 		}		
-		// µÑ´Ù Á¤·ÄÇÏ±â
+		// ë‘˜ë‹¤ ì •ë ¬í•˜ê¸°
 		Arrays.sort(firstArr);
 		Arrays.sort(secondArr);
-		// µÎ¹øÂ° ¹è¿­ÀÇ ÀÎµ¦½º´Â µû·Î ¼³Á¤
+		// ë‘ë²ˆì§¸ ë°°ì—´ì˜ ì¸ë±ìŠ¤ëŠ” ë”°ë¡œ ì„¤ì •
 		int idx=N-1;
-		// °öÀÇ ÇÕÀ» ÀúÀåÇÒ º¯¼ö
+		// ê³±ì˜ í•©ì„ ì €ìž¥í•  ë³€ìˆ˜
 		int sum = 0;
-		// Ã¹¹øÂ° ¹è¿­Àº ÀÛÀº ¼öºÎÅÍ, µÎ¹øÂ° ¹è¿­Àº Å« ¼öºÎÅÍ °öÇØÁÖ¸é µÈ´Ù.
+		// ì²«ë²ˆì§¸ ë°°ì—´ì€ ìž‘ì€ ìˆ˜ë¶€í„°, ë‘ë²ˆì§¸ ë°°ì—´ì€ í° ìˆ˜ë¶€í„° ê³±í•´ì£¼ë©´ ëœë‹¤.
 		for(int i=0;i<N;i++) {
 			sum += firstArr[i]*secondArr[idx--];
 		}
-		// Ãâ·Â
+		// ì¶œë ¥
 		System.out.println(sum);
 		
 	}
 }
+
