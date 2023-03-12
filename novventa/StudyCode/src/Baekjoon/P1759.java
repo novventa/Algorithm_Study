@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1759 {
+
     // 암호 만들기
     // L개의 알파벳 소문자, 적어도 한개의 모음, 적어도 2개의 자음으로 구성된 암호
     // 암호는 알파벳순으로 정렬되었을 가능성이 크다.
