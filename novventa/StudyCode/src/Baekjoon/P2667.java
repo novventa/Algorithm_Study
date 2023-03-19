@@ -1,4 +1,4 @@
-package BOJ;
+package Baekjoon;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class P2667 {
     // 미로찾기와 비슷한 문제
     // 맵을 입력받고
-    // 우선탐색을 사용해
+    // 너비우선탐색을 사용해
     // 4방탐색을 하며 인접한 집이 있는지 확인한다.
     // 집 갯수를 각 단지마다 세서 출력한다.
     //
@@ -68,15 +68,15 @@ public class P2667 {
     }
 
     // DFS 함수 정의
-    public static int dfs(int r, int c) {
-        // 현재 좌표 방문 처리
-        isVisited[r][c] = true;
+    public static int dfs(int x, int y) {
+        // 현재 좌표 방문 처리/**/
+        isVisited[x][y] = true;
         // 현재 단지 내의 집 갯수
         int houseCnt = 1;
         // 4방 탐색하기
         for (int i = 0; i < 4; i++) {
-            int nRow = r + dRow[i];
-            int nCol = c + dCol[i];
+            int nRow = x + dRow[i];
+            int nCol = y + dCol[i];
             // 경계 조건
             if (nRow < 0 || nCol < 0 || nRow >= N || nCol >= N)
                 continue;
