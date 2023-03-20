@@ -63,4 +63,3 @@ public class P2485 {
         return a;
     }
 }
-
