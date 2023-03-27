@@ -3,6 +3,7 @@ package Baekjoon;
 public class P1260 {
     // DFS와 BFS
     // 개념 설명
+
     // DFS(Depth-First Search)는 깊이 우선 탐색으로, 시작 노드에서
     // 다음 분기로 넘어가기 전에 해당 분기를 완벽하게 탐색하는 알고리즘이다.
     // DFS는 스택 자료구조를 사용한다.
