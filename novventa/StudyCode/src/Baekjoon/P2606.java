@@ -1,4 +1,4 @@
-package BOJ;
+package Baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,58 +6,58 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class P2606 {
-    
+
     static int[][] Node;
-    // ³ëµå¿¡ ¹æ¹®Çß´ÂÁö Ã¼Å©ÇÏ´Â ¹è¿­
-    static boolean[] isVisited; 
-    // ÀÌ¾îÁ® ÀÖ´Â ³ëµåÀÇ ¼ö¸¦ ¼¼±â À§ÇÑ º¯¼ö
+    // ë…¸ë“œì— ë°©ë¬¸í–ˆëŠ”ì§€ ì²´í¬í•˜ëŠ” ë°°ì—´
+    static boolean[] isVisited;
+    // ì´ì–´ì ¸ ìˆëŠ” ë…¸ë“œì˜ ìˆ˜ë¥¼ ì„¸ê¸° ìœ„í•œ ë³€ìˆ˜
     static int cnt = 0;
-    // ³ëµåÀÇ °¹¼ö
+    // ë…¸ë“œì˜ ê°¯ìˆ˜
     static int com;
-    // °£¼±ÀÇ °¹¼ö
+    // ê°„ì„ ì˜ ê°¯ìˆ˜
     static int pair;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // ³ëµåÀÇ °¹¼ö ÀÔ·Â¹Ş±â
+        // ë…¸ë“œì˜ ê°¯ìˆ˜ ì…ë ¥ë°›ê¸°
         com = Integer.parseInt(br.readLine());
-        // °£¼±ÀÇ °¹¼ö ÀÔ·Â¹Ş±â
+        // ê°„ì„ ì˜ ê°¯ìˆ˜ ì…ë ¥ë°›ê¸°
         pair = Integer.parseInt(br.readLine());
-        // ³ëµåµéÀ» ÀúÀåÇÒ ¹è¿­ »ı¼º
+        // ë…¸ë“œë“¤ì„ ì €ì¥í•  ë°°ì—´ ìƒì„±
         Node = new int[com+1][com+1];
-        // ³ëµå¿¡ ¹æ¹®Çß¾ú´ÂÁö¸¦ ÀúÀåÇÒ ¹è¿­ »ı¼º
+        // ë…¸ë“œì— ë°©ë¬¸í–ˆì—ˆëŠ”ì§€ë¥¼ ì €ì¥í•  ë°°ì—´ ìƒì„±
         isVisited = new boolean[com+1];
-        // °£¼±ÀÇ ¼ö ¸¸Å­ ¹İº¹ÇÏ±â
+        // ê°„ì„ ì˜ ìˆ˜ ë§Œí¼ ë°˜ë³µí•˜ê¸°
         for (int i = 0; i < pair; i++) {
-             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-             // ³ëµåµéÀÇ Á¤º¸ ÀÔ·Â¹Ş±â
-             int a = Integer.parseInt(st.nextToken());
-             int b = Integer.parseInt(st.nextToken());
-             // ¹æÇâ¼ºÀÌ ¾ø±â¶§¹®¿¡ ´ëÄªÀ¸·Î ÇØµµ µÈ´Ù
-             Node[a][b] = 1;
-             Node[b][a] = 1;
-             
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            // ë…¸ë“œë“¤ì˜ ì •ë³´ ì…ë ¥ë°›ê¸°
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
+            // ë°©í–¥ì„±ì´ ì—†ê¸°ë•Œë¬¸ì— ëŒ€ì¹­ìœ¼ë¡œ í•´ë„ ëœë‹¤
+            Node[a][b] = 1;
+            Node[b][a] = 1;
+
         }
-        // 1¹øºÎÅÍ DFS ½ÃÀÛ
+        // 1ë²ˆë¶€í„° DFS ì‹œì‘
         dfs(1);
-        // ÀÚ±â ÀÚ½ÅÀ» Á¦¿ÜÇÏ°í
+        // ìê¸° ìì‹ ì„ ì œì™¸í•˜ê³ 
         System.out.println(cnt-1);
 
     }
 
 
     public static void dfs(int root) {
-        // 1¹ø ¹æ¹®(°¨¿°)
-        isVisited[root] = true;    
-        // ¹æ¹®ÇÑ ³ëµå ¼ö Áõ°¡
-        cnt++;    
-        // ³ëµå °³¼ö¸¸Å­ ¹İº¹
-        for (int i = 0; i <= com; i++) {  
-            //node[root][i] == 1 : 1¹ø°ú ¿¬°áµÈ ³ëµå¶ó¸é     
-            //!isVisited[i] : i¹ø ³ëµå¿¡ ¹æ¹®ÇÑ Àû ¾øÀ¸¸é
-            if (Node[root][i] == 1 && !isVisited[i]) {    
-                // i¹ø ³ëµå ¹æ¹®Ã³¸®
-                dfs(i);           
+        // 1ë²ˆ ë°©ë¬¸(ê°ì—¼)
+        isVisited[root] = true;
+        // ë°©ë¬¸í•œ ë…¸ë“œ ìˆ˜ ì¦ê°€
+        cnt++;
+        // ë…¸ë“œ ê°œìˆ˜ë§Œí¼ ë°˜ë³µ
+        for (int i = 0; i <= com; i++) {
+            //node[root][i] == 1 : 1ë²ˆê³¼ ì—°ê²°ëœ ë…¸ë“œë¼ë©´
+            //!isVisited[i] : ië²ˆ ë…¸ë“œì— ë°©ë¬¸í•œ ì  ì—†ìœ¼ë©´
+            if (Node[root][i] == 1 && !isVisited[i]) {
+                // ië²ˆ ë…¸ë“œ ë°©ë¬¸ì²˜ë¦¬
+                dfs(i);
             }
         }
     }
