@@ -12,7 +12,7 @@ public class 퀵정렬_로무토_변지혜 {
 	private static void quickSort(int[] arr, int start, int end) {
 		// 퀵정렬
 		
-		if (start == end) return; // 쪼갤 배열이 없으면 반환
+		if (start >= end) return; // 쪼갤 배열이 없으면 반환
 		
 		int pivot = lomuto(arr, start, end); // 제 자리에 위치한 피봇 값 찾기
 		quickSort(arr, start, pivot - 1); // 피봇 기준 왼쪽 정렬
