@@ -75,7 +75,7 @@ public class P2512 {
 			for (int i = 0; i < N; i++) {
 				sum += Math.min(arr[i], mid);
 			}
-
+			
 			// 예산들의 합을 구했다.
 			// 예산들의 합이 M보다 큰 경우
 			if (sum > M) {
@@ -89,7 +89,7 @@ public class P2512 {
 				left = mid + 1;
 			}
 		}
-
+		// 출력
 		System.out.println(right);
 
 	}
