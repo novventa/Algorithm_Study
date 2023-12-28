@@ -24,8 +24,8 @@ public class P17945 {
             x++;
         }
 
-        for(int i=0;i<ans.size();i++){
-            System.out.print(ans.get(i));
+        for(int num : ans){
+            System.out.print(num);
             System.out.print(" ");
         }
     }
