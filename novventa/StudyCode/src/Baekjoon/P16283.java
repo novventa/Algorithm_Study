@@ -1,16 +1,21 @@
 package Baekjoon;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class P16283 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
 
         int a, b, n, w, ans = -1;
-        a = scanner.nextInt();
-        b = scanner.nextInt();
-        n = scanner.nextInt();
-        w = scanner.nextInt();
+        a = Integer.parseInt(st.nextToken());
+        b = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
+        w = Integer.parseInt(st.nextToken());
 
         for (int i = 1; i < n; i++) {
             if (a * i + b * (n - i) == w) {
